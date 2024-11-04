@@ -1,0 +1,170 @@
+.swiper-slide {
+  display: flex;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background: white;
+    color: #DDDEE0FF;
+    border-radius: 50%;
+    border: 1px solid #DDDEE0FF;
+    width: 50px;
+    height: 50px;
+    position: 'absolute';
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: #DDDEE0FF;
+    color: white
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 24px;
+}
+
+.history-data-span {
+    font-size: 56px;
+    font-weight: 700;
+    max-width: 520px;
+    color: #42567A;
+    line-height: 67px;
+}
+.year-span {
+    font-size: 200px;
+    font-weight: 700,
+}
+
+.years-block {
+    width: 100%;
+    position: absolute;
+    top: 220px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.block-active-years-buttons {
+    padding-left: 100px;
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: 220px;
+}
+
+.swiper-block {
+    margin: 20px 100px;
+    height: 135px;
+}
+
+.card-date {
+   width: 320px;
+   color: #3877EE;
+}
+
+.bottom-buttons-block {
+    display: flex;
+    gap: 20px;
+}
+
+.gorisontal-vector {
+       border: 1px solid #DDDEE0FF;
+       width: 100%;
+       position: absolute;
+       top: 367px;
+       left: 0;
+       z-index: -1;
+    }
+
+    .vertical-vector {
+        border: 1px solid #DDDEE0FF;
+        height: 100vh;
+        position: absolute;
+        right: 50%;
+        top: 0;
+    }
+    .active-tema {
+        position: absolute;
+        top: 122px;
+        left: calc(100% / 2 + 170px );
+        font-size: 20px;
+        font-weight: 700;
+        color: #42567A;
+    }
+
+@media (max-width: 320px) {
+    .circle {
+        display: none;
+    }
+    .history-data-span {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .line-gradient {
+        display: none;
+    }
+    .year-span {
+        font-size: 56px;
+    }
+    .years-block {
+        position: static;
+        width: 280px;
+        justify-content: space-between;
+        margin: 70px 20px;
+        gap: 0;
+    }
+    .vectors {
+        display: none;
+    }
+    .block-active-years-buttons{
+       padding-left: 20px;
+       position: static;
+    }
+    .active-year-button {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+    .swiper-block {
+        margin: 20px;
+        height: 135px;
+        margin-bottom: 70px;
+    }
+     .card-date {
+      max-width: 166px;
+     }
+    .card-text {
+      max-width: 166px;
+      height: 80px;
+      font-size: 14px;
+    }
+    .bottom-buttons-block {
+       gap: 5px;
+    }
+    .mobile-pagination {
+       width: 320px;
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       margin-top: -20px;
+    }
+    .mobile-span {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+
+    .gorisontal-vector {
+       width: 280px;
+       top: 307px;
+       margin: 0 20px;
+    }
+    .active-tema {
+        display: none;
+    }
+}
